@@ -84,6 +84,25 @@ import { tool as yamlViewer } from './yaml-viewer';
 
 export const toolsByCategory: ToolCategory[] = [
   {
+    name: 'common',
+    components: [
+      sqlPrettify,
+      jsonViewer,
+      jsonMinify,
+      jsonDiff,
+      base64StringConverter,
+      base64FileConverter,
+      dateTimeConverter,
+      urlParser,
+      urlEncoder,
+      qrCodeGenerator,
+      textStatistics,
+      textDiff,
+
+    ],
+  },
+
+  {
     name: 'Crypto',
     components: [tokenGenerator, hashText, bcrypt, uuidGenerator, ulidGenerator, cypher, bip39, hmacGenerator, rsaKeyPairGenerator, passwordStrengthAnalyser, pdfSignatureChecker],
   },
