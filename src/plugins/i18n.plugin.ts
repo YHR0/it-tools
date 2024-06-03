@@ -3,9 +3,10 @@ import { get } from '@vueuse/core';
 import type { Plugin } from 'vue';
 import { createI18n } from 'vue-i18n';
 
+// 默认设为中文
 const i18n = createI18n({
   legacy: false,
-  locale: 'en',
+  locale: 'zh',
   messages,
 });
 

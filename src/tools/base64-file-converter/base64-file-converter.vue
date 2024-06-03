@@ -79,7 +79,7 @@ async function onUpload(file: File) {
 </script>
 
 <template>
-  <c-card title="Base64 to file">
+  <c-card title="Base64 to file （Base64转文件或图像）">
     <n-grid cols="3" x-gap="12">
       <n-gi span="2">
         <c-input-text
@@ -113,21 +113,21 @@ async function onUpload(file: File) {
 
     <div flex justify-center gap-3>
       <c-button :disabled="base64Input === '' || !base64InputValidation.isValid" @click="previewImage()">
-        Preview image
+        Preview image （预览图像）
       </c-button>
       <c-button :disabled="base64Input === '' || !base64InputValidation.isValid" @click="downloadFile()">
-        Download file
+        Download file （下载文件）
       </c-button>
     </div>
   </c-card>
 
-  <c-card title="File to base64">
-    <c-file-upload title="Drag and drop a file here, or click to select a file" @file-upload="onUpload" />
+  <c-card title="File to base64（文件转base64）">
+    <c-file-upload title="Drag and drop a file here, or click to select a file （ 将文件拖放到此处，或单击以选择文件 ）" @file-upload="onUpload" />
     <c-input-text :value="fileBase64" multiline readonly placeholder="File in base64 will be here" rows="5" my-2 />
 
     <div flex justify-center>
       <c-button @click="copyFileBase64()">
-        Copy
+        Copy （复制）
       </c-button>
     </div>
   </c-card>

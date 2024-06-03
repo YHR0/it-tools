@@ -25,8 +25,8 @@ const b64ValidationWatch = [decodeUrlSafe];
 </script>
 
 <template>
-  <c-card title="String to base64">
-    <n-form-item label="Encode URL safe" label-placement="left">
+  <c-card title="String to base64 （字符串转Base64）">
+    <n-form-item label="Encode URL safe （安全编码URL）" label-placement="left">
       <n-switch v-model:value="encodeUrlSafe" />
     </n-form-item>
     <c-input-text
@@ -34,7 +34,7 @@ const b64ValidationWatch = [decodeUrlSafe];
       multiline
       placeholder="Put your string here..."
       rows="5"
-      label="String to encode"
+      label="String to encode （要编码的字符串）"
       raw-text
       mb-5
     />
@@ -56,8 +56,8 @@ const b64ValidationWatch = [decodeUrlSafe];
     </div>
   </c-card>
 
-  <c-card title="Base64 to string">
-    <n-form-item label="Decode URL safe" label-placement="left">
+  <c-card title="Base64 to string （Base64转字符串）">
+    <n-form-item label="Decode URL safe （安全编码URL）" label-placement="left">
       <n-switch v-model:value="decodeUrlSafe" />
     </n-form-item>
     <c-input-text
@@ -67,7 +67,7 @@ const b64ValidationWatch = [decodeUrlSafe];
       rows="5"
       :validation-rules="b64ValidationRules"
       :validation-watch="b64ValidationWatch"
-      label="Base64 string to decode"
+      label="Base64 string to decode （要解码的Base64字符串）"
       mb-5
     />
 

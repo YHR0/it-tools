@@ -88,7 +88,7 @@ function handleUpload(files: FileList | null | undefined) {
       </div>
 
       <c-button>
-        Browse files
+        Browse files （浏览文件）
       </c-button>
     </slot>
   </div>
