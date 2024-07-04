@@ -23,8 +23,8 @@ const rules: UseValidationRule<string>[] = [
 
 <template>
   <format-transformer
-    input-label="Your raw JSON"
-    input-placeholder="Paste your raw JSON here..."
+    input-label="你的原始JSON"
+    input-placeholder="Paste 你的原始JSON here..."
     output-label="CSV version of your JSON"
     :input-validation-rules="rules"
     :transformer="transformer"

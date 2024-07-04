@@ -23,8 +23,8 @@ const jsonValidationRules = [
   <c-input-text
     v-model:value="rawLeftJson"
     :validation-rules="jsonValidationRules"
-    label="Your first JSON"
-    placeholder="Paste your first JSON here..."
+    label="你的JSON"
+    placeholder="将你的JSON粘贴到此处..."
     rows="20"
     multiline
     test-id="leftJson"
@@ -35,8 +35,8 @@ const jsonValidationRules = [
   <c-input-text
     v-model:value="rawRightJson"
     :validation-rules="jsonValidationRules"
-    label="Your JSON to compare"
-    placeholder="Paste your JSON to compare here..."
+    label="要比较的JSON"
+    placeholder="将要比较的JSON粘贴到此处..."
     rows="20"
     multiline
     test-id="rightJson"

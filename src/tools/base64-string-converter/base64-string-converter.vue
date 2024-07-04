@@ -32,7 +32,7 @@ const b64ValidationWatch = [decodeUrlSafe];
     <c-input-text
       v-model:value="textInput"
       multiline
-      placeholder="Put your string here..."
+      placeholder="将字符串放到这里..."
       rows="5"
       label="String to encode （要编码的字符串）"
       raw-text
@@ -40,18 +40,18 @@ const b64ValidationWatch = [decodeUrlSafe];
     />
 
     <c-input-text
-      label="Base64 of string"
+      label="Base64 转 string"
       :value="base64Output"
       multiline
       readonly
-      placeholder="The base64 encoding of your string will be here"
+      placeholder="字符串的base64编码将在此处"
       rows="5"
       mb-5
     />
 
     <div flex justify-center>
       <c-button @click="copyTextBase64()">
-        Copy base64
+        复制base64编码
       </c-button>
     </div>
   </c-card>
@@ -63,7 +63,7 @@ const b64ValidationWatch = [decodeUrlSafe];
     <c-input-text
       v-model:value="base64Input"
       multiline
-      placeholder="Your base64 string..."
+      placeholder="你的base64内容..."
       rows="5"
       :validation-rules="b64ValidationRules"
       :validation-watch="b64ValidationWatch"
@@ -73,8 +73,8 @@ const b64ValidationWatch = [decodeUrlSafe];
 
     <c-input-text
       v-model:value="textOutput"
-      label="Decoded string"
-      placeholder="The decoded string will be here"
+      label="解码字符串"
+      placeholder="解码的字符串将在这里"
       multiline
       rows="5"
       readonly
@@ -83,7 +83,7 @@ const b64ValidationWatch = [decodeUrlSafe];
 
     <div flex justify-center>
       <c-button @click="copyText()">
-        Copy decoded string
+        复制解码后的字符串
       </c-button>
     </div>
   </c-card>
